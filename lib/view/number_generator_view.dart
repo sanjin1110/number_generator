@@ -67,6 +67,10 @@ class RandomNumberButtonState extends State<RandomNumberButton> {
                     height: 100,
                     width: 100,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.yellow,
+                      ),
                       onPressed: () {
                         checkAnswer(true);
                       },
@@ -77,6 +81,10 @@ class RandomNumberButtonState extends State<RandomNumberButton> {
                     height: 100,
                     width: 100,
                     child: ElevatedButton(
+                      style: ElevatedButton.styleFrom(
+                        foregroundColor: Colors.black,
+                        backgroundColor: Colors.yellow,
+                      ),
                       onPressed: () {
                         checkAnswer(false);
                       },
@@ -98,6 +106,10 @@ class RandomNumberButtonState extends State<RandomNumberButton> {
               child: Text("Incorrect Answer : $incorrectCount"),
             ),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                foregroundColor: Colors.black,
+                backgroundColor: Colors.red,
+              ),
               onPressed: () {
                 Navigator.pushReplacement(
                   context,
